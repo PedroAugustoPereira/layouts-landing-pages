@@ -1,0 +1,538 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Montserrat', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto; 
+}
+
+header{
+	padding: 20px 2%;
+}
+
+.logo img{
+	float: left;
+	width: 236px;
+}
+
+header nav{
+	float: right;
+}
+
+header nav ul{
+	padding: 8px 0;
+}
+
+header nav ul li{
+	list-style-type: none;
+	float: left;
+	padding: 0 20px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #b4b4b4;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.img-single{
+	width: 100%;
+	background-color: #ccc;
+	border: 5px solid white;
+	padding-top: 100%; 
+}
+
+.servicos .container{
+	max-width: 800px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -45px;
+}
+
+.servicos > .container .wraper-servico{
+	background-image: url('../imagens/icone_dente.png');
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	background-position: center calc(100% - 5px);
+	text-align: center;
+}
+
+.servicos .container .wraper-servico:nth-of-type(1), .servicos .container .wraper-servico:nth-of-type(3){
+	width: 30%;
+	padding:30px 2%;
+	background-color: #576975;
+}
+
+.servicos .container .wraper-servico:nth-of-type(2){
+	width: 40%;
+	padding:45px 2%;
+	background-color: #688293;
+	background-image: none;
+}
+
+section.servicos > .container .wraper-servico h2{
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+section.servicos > .container .wraper-servico p{
+	color: white;
+	margin-top:8px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+section.perfil-container{
+	padding:40px 0;
+}
+
+section.perfil-container .container{
+	max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper{
+	padding-top:60%;
+	position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+section.perfil-container .img-perfil{
+	width: 40%;
+	height: 100%;
+	background-image: url('../imagens/img_perfil.png');
+	background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+	width: 60%;
+	padding:0 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+	 color: #698293;
+	 font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top:8px;
+}
+
+section.videos{
+	padding: 50px 0;
+}
+
+section.videos .container{
+	padding: 0 5%;
+}
+
+section.videos .box-video{
+	width: calc(100% / 3);
+	padding-top: calc(33.3% * 0.6);
+	float: left;
+	border: 3px solid white;
+	position: relative;
+}
+
+section.videos .box-video:nth-of-type(2){
+	border-left: none;
+}
+
+section.videos .box-video:nth-of-type(3){
+	border-left: none;
+}
+
+section.videos .box-video iframe{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+section.tipos-de-tratamento{
+	padding: 70px 0;
+}
+
+section.tipos-de-tratamento .treinamentos-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tipos-de-tratamento > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.tipos-de-tratamento > .container{
+	padding:80px 0;
+}
+
+.treinamentos-single{
+	padding:20px;
+}
+
+.treinamentos-single h2{
+	font-size: 18px;
+	color: #737373;
+}
+
+.treinamentos-single p{
+	padding:10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
+
+.depoimentos h2{
+	font-size: 18px;
+	color: #737373;
+	text-align: center;
+}
+
+section.depoimentos .container{
+	padding: 40px 0;
+	max-width: 400px;
+}
+
+section.depoimentos .depoiment-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+section.depoimentos .depoiment-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+section.depoimentos .nome-depoimento{
+	padding: 19px 0;
+	text-align: center;
+}
+
+section.depoimentos .nome-depoimento img{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+
+section.depoimentos .nome-depoimento span{
+	position: relative;
+	font-size: 13px;
+	color: #b4b4b4;
+	display: inline-block;
+	vertical-align: top;
+	top: 5px;
+}
+
+.insta, .face{
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 40px 0;
+	background-color: #98a5ae; 
+}
+
+.insta p, .face p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: white;
+	line-height: 23px;
+}
+
+.face{
+	background: #576975
+}
+
+.mosaico-social{
+	width: 100%;
+	float: left;
+}
+
+.img-mosaico{
+	float: left;
+	width: calc(100% / 9);
+	padding-top: calc(100% / 9);
+	background-color: blue;
+	border:6px solid white;
+}
+
+section.contato{
+	padding: 60px 2%;
+}
+
+section.contato h2{
+	font-size: 18px;
+	color: #737373;
+	text-align: center;
+}
+
+section.contato form{
+	width: 100%;
+	margin: 20px auto;
+	max-width: 500px; 
+}
+
+.form-wraper{
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+section.contato .form-wraper span{
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+section.contato .form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 8px; 
+	margin-top: 8px;
+	border: 1px solid #dadada;
+}
+
+section.contato .form-wraper textarea{
+	width: 100%;
+	display: block;
+	height: 121px;
+	margin-top: 8px;
+	border: 1px solid #dadada;
+	line-height: 35px;
+	padding: 8px;
+	resize: none;
+}
+
+section.contato .form-wraper input[type=submit]{
+	width: 100px;
+	height: 35px;
+	border: 0;
+	cursor: pointer;
+	background-color: #688293;
+	display: inline-block;
+}  
+
+footer{
+	padding: 40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1100px;
+}
+
+.footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.footer-block p{
+	color: white;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.footer2{
+	background-color: grey;
+}
+
+.footer2 .container{
+	text-align: center;
+	padding: 1px 2%;
+}
+
+.footer2 .container h2{
+	font-size: 13px;
+	color: black;
+	opacity: 0.5;
+	font-weight: normal;
+}
+
+@media screen and (max-width: 1024px){
+	.img-mosaico{
+		width: calc(100% / 6);
+		padding-top: calc(100% / 6);
+	}
+
+	.mosaico-social > div:nth-of-type(1n+7){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	section.servicos > .container{
+		/*
+		max-width: 800px;
+		display: flex;
+		align-items: center; 
+		position: relative;
+		top:-30px;
+		text-align: center;
+		*/
+		flex-direction: column;
+	}
+
+		section.servicos > .container .box-servico:nth-of-type(1){
+			width: 90%;
+			max-width: 350px;
+			padding:30px 2%;
+		}
+
+		section.servicos > .container .box-servico:nth-of-type(2){
+			width: 94%;
+			max-width: 380px;
+			padding:40px 2%;
+		}
+
+		section.servicos > .container .box-servico:nth-of-type(3){
+			width: 90%;
+			max-width: 350px;
+			padding:30px 2%;
+		}
+
+		section.perfil-container .perfil-wraper{
+			padding-top: 0px; 
+		}
+
+		section.perfil-container .perfil-wraper2{
+			height: auto;
+			position: static;
+			text-align: center;
+			display: inline-block;
+			/*flex-direction: column;*/
+		}
+
+		section.perfil-container .img-perfil{
+		width: 50%;
+		padding-top:70%;
+		display: inline-block;
+		height: auto;
+		/*
+		background-image: url('../imagens/img_perfil.png');
+		background-size: 100% 100%;
+		*/
+		}
+
+		section.perfil-container .texto-perfil{
+			display: inline-block;
+			text-align: justify;
+			width: 100%;
+			padding:0 30px;
+		}
+
+		section.videos{
+			text-align: center;
+		}
+
+		section.videos .box-video{
+			float: none;
+			width: 70%;
+			display: inline-block;
+			/*border:5px solid white;*/
+			/*background-color: green;*/
+			padding-top:calc(70% * 0.6);
+		}
+
+	.img-mosaico{
+		width: calc(100% / 3);
+		padding-top: calc(100% / 3);
+	}
+
+	.mosaico-social > div:nth-of-type(1n+4){
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 580px){
+	section.perfil-container .img-perfil{
+		width: 80%;
+		padding-top:110%;
+	}
+
+	section.videos .box-video{
+		width: 100%;
+		/*border:5px solid white;*/
+		/*background-color: green;*/
+		padding-top:calc(100% * 0.6);
+	}
+
+	.w50{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	header .logo img{
+		width: 200px;
+	}
+}
