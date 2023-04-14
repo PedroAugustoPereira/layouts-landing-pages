@@ -1,0 +1,250 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+header{
+	background-color: #D6D6D6;
+	padding: 10px 6%;
+	padding-bottom: 30px; 
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+.logo-1{
+	background-image: url('../imagens/logo1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	float: left;
+	width: 150px;
+	height: 60px;
+}
+
+.logo-2{
+	background-image: url('../imagens/logo2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	float: right;
+	width: 160px;
+	height: 60px;
+}
+
+section.background{
+	width: 100%;
+	padding: 0 2%;
+}
+
+.bg{
+	background-image: url('../imagens/bg-form.jpg');
+	height: 560px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.container-form{
+	width: 400px;
+	height: 105%;
+	background-color: rgba(255,255,255,0.5); 
+	box-shadow: 2px 2px 2px 2px rgb(255,255,255);
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
+}
+
+.container-form h2{
+	font-size: 18px;
+	padding: 5% 2.5%;
+	background-color: rgb(234, 236, 239);
+	font-weight: normal;
+	text-align: center;
+}
+
+
+.form-waper:not(:first-child){
+	margin-top: 40px;
+}
+
+.form-waper:last-child{
+	margin-top: 20px;
+}
+
+.container-form form{
+	padding: 15px;
+	margin-top: 8px;
+}
+
+.form-waper p{
+	font-size: 14px;
+}
+
+.form-waper input[type="text"], .form-waper input[type="email"], .form-waper input[type="number"]{
+	height: 45px;
+	width: 100%;
+	border: 1px solid gray;
+	padding-left: 10px;
+	line-height: 45px; 
+}
+
+.form-waper input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	background-color: green;
+	font-size: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+.form-waper input[type="submit"]:hover{
+	background-color: #006400;
+	transition: 2s;
+}
+
+section.chamada{
+	width: 100%;
+	text-align: center;
+}
+
+section.chamada .container{
+	background-color: #0f9634;
+	padding: 50px;
+}
+
+section.chamada .container h2{
+	font-size: 25px;
+	font-weight: normal;
+	width: 96%;
+	display: inline-block;
+	max-width: 700px;
+	color: white;
+	text-transform: uppercase;
+}
+
+section.chamada .container p{
+	font-size: 15px;
+	width: 96%;
+	display: inline-block;
+	color: white;
+	max-width: 700px;
+	margin-top: 10px;
+}
+
+.arrow{
+	width: 40px;
+	height: 40px;
+	background-image: url('../imagens/arrow.png');
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: absolute;
+	top:-24px;
+	left: 50%;
+	transform:translateX(-50%);
+}
+
+.teste{
+	position: relative;
+	width: 100%;
+}
+
+.flex{
+	display: flex;
+}
+
+.item-1{
+	background-size: cover;
+	width: 60%;
+	background-position: center;
+}
+
+.item-2{
+	width: 40%;
+	padding: 90px 40px;
+	background-color: #15c218;
+	border: 2px solid white;
+
+}
+
+footer{
+	text-align: center;
+}
+
+footer .container{
+	background-color:rgb(220,220,220);
+	padding: 20px 0;
+}
+
+footer .container img{
+	width: 130px;
+}
+
+footer .container h3{
+	font-size: 15px;
+	margin-top: 10px;
+	opacity: 0.5; 
+}
+
+@media screen and (max-width:768px){
+	.flex{
+		display: block;
+	}
+
+	.item-1{
+		width: 100%;
+		padding-top: 80%;
+	}
+
+	.item-2{
+		width: 100%;
+		border-left:0px ;
+		border-right:0px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{
+		margin-top:10px;
+		display: inline-block;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 960px){
+	.bg{
+		height: auto;
+		text-align: center;
+		padding: 70px;
+	}
+
+	.container-form{
+		height: auto;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+		width: 96%;
+	}
+}
