@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu site 3</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+	<meta name="description" content="Meu terceiro projeto">
+	<meta name="keywords" description="empresa de dev web">
+	<meta name="author" content="Pedro Augusto Pereira">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<div class="logo"></div>
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">serviços</a></li>
+					<li><a href="">sobre</a></li>
+					<li><a href="">contato</a></li>
+				</ul>
+			</nav>
+
+			<nav class="mobile-menu">
+				<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">serviços</a></li>
+					<li><a href="">sobre</a></li>
+					<li><a href="">contato</a></li>
+				</ul>
+			</nav>
+
+			<div class="clear"></div>
+
+			<div class="chamada1">
+				<h2>Sistemas Próprios<br>
+				Para Empresas Autênticas</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend commodo ipsum, vitae malesuada nisi convallis eget.</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="sessao1">
+		<div class="container">
+			<div class="texto-sessao1">	
+				<h2>Desenvolvemos Sistema Únicos</h2>
+				<p>Lorem Ipsum silor domor amet</p>
+				<ul>
+					<li>Sites</li>
+					<li>Lojas virtuais</li>
+					<li>Sistemas</li>
+				</ul>
+				<div class="clear"></div>
+				<div class="button1">Entre em contato</div>
+			</div>
+			<div class="device-sessao1"></div><!--device-->
+			<div class="clear"></div>
+		</div>
+	</section>
+
+	<section class="sessao2">
+		<div class="container">
+			<h2>Desenvolvido de pessoas para pessoas</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit. Nunc ut viverra dui. Ut efficitur cursus diam a volutpat. Sed sagittis pharetra dolor, ac mollis sapien condimentum vitae. Ut in interdum tortor.</p>
+				<img src="imagens/mockup.jpg">
+		</div>
+	</section>
+
+	<section class="sessao3">
+		<div class="parte1">
+			<div class="waper-parte1">
+				<h2>Nosso time</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit.</p>
+			</div>
+		</div>
+
+		<div class="parte2">
+			<div class="author">
+				<div class="titulo-author">
+					<div class="waper-author">
+						<h2>Pedro Augusto</h2>
+						<p>Desenvolvedor</p>
+					</div>
+
+					<div class="img-author"></div>
+				</div>
+
+				<div class="text-author">
+					<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+					Ut tempus pulvinar ante, at euismod orci.</p>
+				</div>
+			</div>
+			<div class="slider-bullets">
+				<span style="background-color:black;"></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+
+	<section class="sessao4">
+		<div class="container">
+			<div class="form">
+				<h2>Entre em contato</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lobortis iaculis. In hac habitasse platea dictumst. Cras vitae purus metus.</p>
+				<form>
+					<input type="text" name="nome" placeholder="Nome:">
+					<input type="email" name="email" placeholder="Email:">
+					<textarea name="texto" placeholder="Mensagem:"></textarea>
+					<div class="clear"></div>
+					<div><input type="submit" name="enviar" value="Enviar"></div>
+				</form>
+			</div>
+
+			<div class="waper-map">
+				<h2>Faça uma visita</h2>
+				<div class="waper-map2">
+					<div class="waper-map3">
+						<div class="map" id="mapa"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="clear"></div>
+		<div class="contaier">
+			<p>Todos os recursos reservados</p>
+			<p>Developer: Pedro Augusto</p>
+		</div>	
+	</footer>
+
+	<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?v=3exp&key=AIzaSyC0WZhX4c5HAGpvlaf-BASlQ1frdqh385A"></script>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var map;
+
+			function initialize(){
+				var mapProp = {
+					center: new google.maps.LatLng(-27.648598, -48.577423),
+					scrollwheel: false,
+					zoom: 12,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				map = new google.maps.Map(document.getElementById('mapa'), mapProp);
+			}
+
+			function addmarker(lat, long, icon, content){
+				var LatLng = {
+					'lat': lat,
+					'lng': long
+				}
+
+				var marker = new google.maps.Marker({
+					position: LatLng,
+					map: map,
+					icon: icon
+				})
+
+				var infoWindow = new google.maps.InfoWindow({
+					maxWidth: 200,
+					content: content,
+					pixelOffset: new google.maps.Size(0,20)
+				})
+
+				google.maps.event.addListener(marker, 'click' , function(){
+					infoWindow.open(map, marker);	
+				})
+
+			}
+			 var endereco = '<p style="padding: 10px; color: black; font-size:16px">Meu endereço</p>';
+			initialize();
+
+			addmarker(-27.616637, -48.5923228, '', endereco);
+		}
+	</script>
+</body>
+</html>
