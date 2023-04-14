@@ -1,0 +1,286 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cls{
+	clear: both;
+}
+
+.center{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px; 
+}
+
+.header{
+	width: 100%;
+	background-color: #212343;
+	height: 70px; 
+	padding: 0 2%;
+}
+
+.header img{
+	margin: 21px;
+}
+
+.container-banner{
+	width: 100%;
+	height: 557px;
+	background-image:url('../images/header_bg.png'); 
+	background-size: cover;
+	background-position: center; 
+	padding: 0 4%;
+}
+
+.container-banner .center{
+	height: 100%;
+}
+
+.form{
+	width: 400px;
+	height: calc(100% + 30px);
+	position: relative;
+	top: -15px;
+	background-color: white;
+	border: 8px solid rgba(120,120,120,0.5);
+	border-radius: 28px;
+	float: right;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	background-clip:padding-box;
+
+}
+.form h2{
+	font-size: 21px;
+	font-weight: normal;
+	color: #999999;
+}
+
+.container-input{
+	margin-top: 20px; 
+}
+
+.container-input span,.form p{
+	color: #BBBBBB;
+	font-size: 18px;
+	display: inline-block;
+	width: 100%;
+}
+
+.form p{
+	margin: 20px 0;
+}
+
+.container-input input[type="text"]{
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+	margin-top: 8px; 
+}
+
+.container-input input[type="text"]:hover{
+	border: 4px solid #ccc;
+}
+
+.container-input-check span{
+	color: #BBBBBB;
+	font-size: 18px;
+	position: relative;
+	left: 5px;
+	width: 100%;
+}
+
+.container-input-check{
+	margin-top: 12px; 
+}
+
+.container-input-submit{
+	text-align: center;
+}
+
+.form input[type=submit]{
+	width: 280px;
+	height: 60px;
+	color: white;
+	font-size:25px;
+	display: inline-block;
+	border-bottom: 5px solid #4A5097;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: #212343;
+}
+
+.form input[type=submit]:hover{
+	color: white;
+	cursor: pointer;
+	background-color: #323665;
+}
+
+.container-input-check input:hover{
+	cursor: pointer;
+}
+
+.container-list{
+	float: left;
+	width: 519px;
+	height: 270px; 
+	margin-top: 100px; 
+	padding: 30px;
+	background-color: rgba(33,35,67,0.7);
+}
+
+.container-list ul{
+	list-style-position: inside;
+}
+
+.container-list ul li{
+	color: white;
+	margin-top: 18px; 
+}
+
+.container-2{
+	background-color: orange;
+	padding: 40px 5%;
+	text-align: center;
+}
+
+.container-2 h2{
+	font-weight: normal;
+}
+
+.container-2 p{
+	display: inline-block;
+	text-align: justify;
+	width: 100%;
+	margin: 15px 0;
+	max-width: 768px;
+}
+
+.arrow{
+	position: relative;
+	top: 60px;
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+
+.container-3{
+	padding: 90px 2%; 
+}
+
+.container-3 h2{
+	text-align: center;
+	color: #462663;
+}
+
+.container-section{
+	margin-top: 40px; 
+	text-align: center;
+}
+
+.container-single{
+	float: left;
+	width: 33.333%;
+	padding: 20px 10px;
+}
+
+.container-single img{
+	width: 70px;
+}
+
+.container-single p{
+	padding: 10px 25px;
+	text-align: justify;
+	display: inline-block;
+}
+
+.footer{
+	border-top: 2px solid #888888;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer p{
+	color: #888888;
+	margin-top: 8px; 
+}
+
+@media screen and (max-width: 1030px){
+	.header{
+		width: 100%;
+		height: auto; 
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	.header img{
+		margin: 0px;
+	}
+
+	.container-list{
+		width: 40%;
+		height: auto;
+		float: none;
+		display: inline-block; 
+		margin-top: 0px; 
+		padding: 30px 0;
+		max-width: 500px;
+		float: left;
+		margin-top: 30px; 
+	}
+
+	.container-banner{
+		height: auto;
+		width: 100%;
+		padding: 40px 2%;
+		text-align: center;
+	}
+
+	.form{
+		float: right;
+		margin-top: 30px; 
+		padding: 10px; 
+		width: 60%;
+		height: 100%;
+		top: 0px;
+		max-width: 400px;
+	}
+
+	.container-input input[type=text]{
+		width: 100%;
+		height: 55px;
+	}
+
+	.form input[type=submit]{
+		max-width: 280px;
+		height: 56px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 728px){
+	.container-list{
+		margin-top: 0px;
+		float: none; 
+		display: inline-block;
+		width: 100%;
+	}
+	.form{
+		float: none; 
+		display: inline-block;
+		width: 90%;	
+		margin-top: 30px; 
+	}
+
+	.container-single{
+		float: none;
+		width: 100%;
+		display: inline-block;
+	}
+}
